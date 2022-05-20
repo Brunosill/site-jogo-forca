@@ -9,10 +9,10 @@ let pagina3 = document.querySelector(".pagina-3");// pagina do jogo
 
 //botoes da pagina 1
 btnNovaPalavra.addEventListener('click', function() {
-    if(pagina1.style.display === "block"){
-        pagina1.style.display = 'none';
-        pagina2.style.display = 'block';
-    }
+    pagina1.style.display = 'none';
+    pagina2.style.display = 'block';
+
+    
     
 });
 

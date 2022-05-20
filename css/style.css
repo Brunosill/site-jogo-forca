@@ -10,8 +10,8 @@ div{
     height: 873px;
     width: 375px;
 }
-.pagina-1{
-    display: block;
+#pagina-1{
+    display: bolck;
 }
 .pagina-2{
     display: none;
