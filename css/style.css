@@ -1,0 +1,32 @@
+
+nav{
+    margin-top: 30px;
+}
+div{
+    margin-top: 15px;
+}
+.quadro{
+    background: red;
+    height: 873px;
+    width: 375px;
+}
+.pagina-1{
+    display: block;
+}
+.pagina-2{
+    display: none;
+}
+.pagina-3{
+    display: none;
+}
+p{
+    text-align: left;
+    font-size: 28px;
+    color: blue;
+    font-weight: bold;
+    
+}
+textarea{
+    border: none;
+    margin: 30px;
+}
