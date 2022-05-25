@@ -33,12 +33,10 @@
             <div  id="pagina-2" class="px-4 py-5 my-5 text-center">
                 <div class="col-lg-6 mx-auto">
                     <p class="lead mb-4">Digite uma palavra ou frase</p>
-                    <div class="container px-5">
-                    <textarea id="novaPalavra"></textarea>
-                    </div>
+                    <div class="container px-5"></div>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Salvar e começar</button>
-                        <button id='btnCancelar'type="button" class="btn btn-outline-secondary btn-lg px-4">Cancelar</button>
+                        <button id='btnSalvaComecar' type="button" class="btn btn-primary btn-lg px-4 gap-3">Salvar e começar</button>
+                        <button id='btnCancelar' type="button" class="btn btn-outline-secondary btn-lg px-4">Cancelar</button>
                     </div>
                 </div>
             </div>
@@ -46,10 +44,14 @@
             <!-- Pagina 3-->
             <div id="pagina-3" class="px-4 py-5 my-4 text-center">
                 <div id="lugarDaForca" class="d-grid gap-2 d-sm-flex justify-content-center">
-
-                    <div id="ds"> </div>
                 </div>
-                <div id="ondeFica"class="justify-content-center">
+                <div id="ondeFica" class="text-center">
+                </div>
+                <div  class="text-center">
+                    <p id="displayAcerto" class="text-center">
+                    </p>
+                </div>
+                <div id="displayTentado" class="text-center">
 
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-center">
@@ -58,6 +60,10 @@
                 </div>
             </div>
         </main>
+        
+        <script src="js/dicionario.js"></script>
+        <script src="js/desenho.js"></script>
+        <script src="js/jogo.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

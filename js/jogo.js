@@ -1,47 +1,41 @@
+var palavraSecreta = palavraSorteada();
+var acertos = 0;
+var erros = 0;
+var tentado = [];
+var palavra = palavraDividida(palavraSecreta);
+imprecaoInicial(palavra)
+
+function jogo(tentativa, iniciar){
 
 
-function jogo(){
-    var palavraSecreta = "bruno";
-    var palavra = [];
-    var acertos = 0;
-    var erros = 0;
-    var tentado = [];
-    var tentativa = "";
+    if(iniciar === 3){
+    
 
-    for (var i = 0; i < palavraSecreta.length; i++){
-        palavra.push(" ");
-    }
-    while (erros < 6){
-        tentativa = prompt("letra");
-
-        console.log(tentado.indexOf(tentativa))
         if(acertos == palavraSecreta.length){
             console.log("parabens!!")
-            break;
         }
-        if(tentado.indexOf(tentativa) == -1){
+        if(tentado.indexOf(tentativa) === -1){
             tentado.push(tentativa);
             
+            
             if(palavraSecreta.indexOf(tentativa) !== -1){
+
+                imprimirAcerto(tentativa);
                 for(let i = 0; i < palavraSecreta.length; i++){
                     if(palavraSecreta[i]==tentativa){
                         palavra[i] = tentativa;
+                        imprimirAcerto(palavra);
                     }
                 }
                 console.log("Acertou !");
                 acertos ++;
+                erros --;
             }else{
-                console.log("Errou!");
                 erros ++;
             }
         }
         if(erros == 6){
             console.log("fim de jogo");
         }
-        console.log(tentado);
-        console.log(palavra);
     }
-
-    
 }
-jogo();
