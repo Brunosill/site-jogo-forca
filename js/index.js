@@ -1,5 +1,5 @@
 
-var pagina = 3;
+var pagina = 1;
 
 let btnJogarPInicial = document.querySelector('#btnJogaUm');
 let btnNovaPalavra = document.querySelector('#adicionaPalavra');
@@ -25,6 +25,7 @@ btnJogarPInicial.addEventListener('click', function(){
     pagina1.style.display = "none";
     pagina3.style.display = "block";
     pagina = 3;
+    iniciarJogo();
 });
 
 //botoes da pagina 2
@@ -37,9 +38,14 @@ btnSalvaComecar.addEventListener('click', function(){
     pagina2.style.display = 'none';
     pagina3.style.display = 'block';
     pagina = 3;
+    iniciarJogo();
 })
 
 //botoes da pagina 3
+btnNovoJogo.addEventListener('click', function(){
+    iniciarJogo()
+})
+
 btnDesistir.addEventListener('click', function(){
     pagina3.style.display = 'none';
     pagina1.style.display = 'block';

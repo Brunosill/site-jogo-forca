@@ -1,5 +1,9 @@
 let dicionario = ['bruno', 'guedes']
 
+function adicionarPalavra(palavra){
+    dicionario.push(palavra);
+}
+
 function palavraDividida(palavraSorteada){
     var separada = [];
     for (var i = 0; i < palavraSorteada.length; i++){

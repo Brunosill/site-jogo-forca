@@ -5,25 +5,99 @@ nav{
 div{
     margin-top: 15px;
 }
-.quadro{
-    background: red;
-    height: 873px;
-    width: 375px;
-}
+
 #pagina-1{
-    display: none;
+    display: block;
 }
 #pagina-2{
     display: none;
 }
 #pagina-3{
-    display: block;
+    display: none;
 }
-#ds{
+
+#aForca{
     width: 300px;
-    height: 300px;
+    height: 450px;
+    position: relative;
 
 }
+#base4{
+    width: 4.5px;
+    height: 49.5px;
+    top: 56px;
+    left: 238px;
+    position: absolute;
+}
+#base3{
+    width: 176px;
+    height: 4.5px;
+    top: -302px;
+    position: inherit;
+}
+#base2{
+    width: 4.5px;
+    height: 360px;
+    left: 9px;
+    top: 55px;
+    position: inherit;
+}
+#base1{
+    width: 280px;
+    height: 5px;
+    top: 40px;
+    position: inherit;  
+}
+#cabeca{
+    width: 61.43px;
+    height: 61.43px;
+    top: 102px;
+    left: 209px;
+    position: absolute;
+    display: none;
+}
+#corpo{
+    width: 4.36px;
+    height: 131.63px;
+    top: 160px;
+    left: 238px;
+    position: absolute;
+    display: none;
+}
+#bEsquerdo{
+    width: 28px;
+    height: 50.2px;
+    top: 160px;
+    left: 212.5px;
+    position: absolute;
+    display: none;
+}
+#bDireito{
+    width: 28px;
+    height: 50.2px;
+    top: 160px;
+    left: 240px;
+    position: absolute;
+    display: none;
+}
+#pEsquerdo{
+    width: 28px;
+    height: 50.2px;
+    top: 288px;
+    left: 212.6px;
+    position: absolute;
+    display: none;
+}
+#pDireito{
+    width: 28px;
+    height: 50.2px;
+    top: 288px;
+    left: 240.6px;
+    position: absolute;
+    display: none;
+}
+
+
 p{
     text-align: left;
     font-size: 28px;

@@ -1,9 +1,19 @@
-var palavraSecreta = palavraSorteada();
+var palavraSecreta ;
 var acertos = 0;
 var erros = 0;
 var tentado = [];
-var palavra = palavraDividida(palavraSecreta);
-imprecaoInicial(palavra)
+var palavra ;
+
+function iniciarJogo(){
+    imprimirForca(0);
+    imprimirSecreta(0);
+    imprimirTentado(0);
+    tentado = [];
+    palavraSecreta = palavraSorteada();
+    palavra = palavraDividida(palavraSecreta);
+    imprimirSecreta(palavra);
+    
+}
 
 function jogo(tentativa, iniciar){
 
@@ -16,6 +26,7 @@ function jogo(tentativa, iniciar){
         }
         if(tentado.indexOf(tentativa) === -1){
             tentado.push(tentativa);
+            imprimirTentado(tentado);
             
             
             if(palavraSecreta.indexOf(tentativa) !== -1){
@@ -29,13 +40,14 @@ function jogo(tentativa, iniciar){
                 }
                 console.log("Acertou !");
                 acertos ++;
-                erros --;
             }else{
                 erros ++;
+                imprimirForca(erros);
             }
         }
         if(erros == 6){
             console.log("fim de jogo");
         }
     }
+    console.log(displayAcerto.getAttribute);
 }
